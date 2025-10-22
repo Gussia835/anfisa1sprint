@@ -32,8 +32,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'anfisa_for_friends.urls'
 
-TEMPLATES_DIR = BASE_DIR / 'templates'
+TEMPLATES_DIR = BASE_DIR / 'html_templates'
 
+print(TEMPLATES_DIR)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -90,7 +91,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static_dev',
-    ]
+    BASE_DIR / 'html_templates'
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
